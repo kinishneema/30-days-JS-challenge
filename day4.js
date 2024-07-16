@@ -35,7 +35,7 @@ do{
 
 }
 while(i5>=1)
-console.log("number"+number)
+console.log("number:"+number)
 
 // let rows = 5;
 // for (let i = 1; i <= rows; i++) {
