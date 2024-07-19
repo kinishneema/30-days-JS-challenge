@@ -35,10 +35,11 @@ let library = {
         author: "Aldous Huxley",
         year: 1932
       },
-      book // Including the previously defined book object
+      book 
     ]
   };
 console.log(library)  
+
 
 console.log(library.name);
 library.books.forEach(b=>{
