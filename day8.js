@@ -50,4 +50,18 @@ console.log(myObject);
 myObject.start();
 
 
+const key1 = "name";
+const key2 = "age";
+const value1 = "Alice";
+const value2 = 30;
+
+const person = {
+    [key1]: value1,
+    [key2]: value2
+};
+
+console.log(person); // Outputs: { name: 'Alice', age: 30 }
+
+
+
 
