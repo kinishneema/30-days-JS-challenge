@@ -1,4 +1,3 @@
-
 // Activity 1: Selecting and Manipulating Elements
 document.getElementById('myElement').textContent = 'New text content (Task 1)';
 document.querySelector('.myClass').style.backgroundColor = 'blue';
@@ -8,7 +7,6 @@ document.querySelector('.myClass').style.backgroundColor = 'blue';
 let newDiv = document.createElement('div');
 newDiv.textContent = 'This is a new div element (Task 3)';
 document.body.appendChild(newDiv);
-
 
 let newLi = document.createElement('li');
 newLi.textContent = 'New list item (Task 4)';

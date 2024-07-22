@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="mybtn">click me</button>
+    <p id="mypara">this is the para</p>
+
+    <img id="myImage" src="image.jpg" alt="An image">
+
+    <button id="mybtn1">me click us</button>
+
+    <div id="myDiv">Hover over me!</div>
+
+    <input type="text" id="myInput">
+    
+    <input type="text" id="myInput">
+    <p id="displayParagraph"></p>
+
+    <form id="myForm">
+        <input type="text" name="name" placeholder="Name">
+        <button type="submit">Submit</button>
+      </form>
+
+    
+      <select id="mySelect">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+      </select>
+      <p id="selectedValue"></p>
+
+    
+      <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+
+      <div id="parentDiv">
+        <button>Add Item</button>
+      </div>
+      
+
+
+</body>
+<script>
+ document.getElementById("mybtn").addEventListener('click',function(){
+    document.getElementById("mypara").textContent="this is the change text";
+ })
+
+ document.getElementById('myImage').addEventListener('dblclick', function() {
+    this.style.display = this.style.display === 'none' ? 'block' : 'none';
+ });
+
+ document.getElementById("mybtn1").addEventListener('mouseover',function(){
+    this.style.backgroundColor="yellow";
+ })
+
+ document.getElementById('mydiv').addEventListener('mouseout',function(){
+    this.style.backgroundColor=' ';
+ })
+
+ document.getElementById('myInput').addEventListener('keydown', function(event) {
+    console.log('Key pressed:', event.key);
+  });
+
+  document.getElementById('myInput').addEventListener('keyup', function() {
+    document.getElementById('displayParagraph').textContent = this.value;
+  });
+
+  document.getElementById('myForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const formData = new FormData(this);
+    for (let [name, value] of formData) {
+      console.log(`${name}: ${value}`);
+    }
+  });
+
+  document.getElementById('mySelect').addEventListener('change', function() {
+    document.getElementById('selectedValue').textContent = this.value;
+  });
+
+  document.getElementById('myList').addEventListener('click', function(event) {
+    if (event.target.tagName === 'LI') {
+      console.log('Clicked item:', event.target.textContent);
+    }
+  });
+
+  document.getElementById('parentDiv').addEventListener('click', function(event) {
+    if (event.target.tagName === 'LI') {
+      console.log('Dynamically added item clicked:', event.target.textContent);
+    } else if (event.target.tagName === 'BUTTON') {
+      const newItem = document.createElement('li');
+      newItem.textContent = `Item ${document.querySelectorAll('#parentDiv li').length + 1}`;
+      this.appendChild(newItem);
+    }
+  });
+</script>
+
+</html>
