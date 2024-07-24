@@ -25,21 +25,18 @@ const fetchData1 = () =>
       resolve("Data from server 1");
     }, 1000);
   });
-
 const fetchData2 = () =>
   new Promise((resolve) => {
     setTimeout(() => {
       resolve("Data from server 2");
     }, 1000);
   });
-
 const fetchData3 = () =>
   new Promise((resolve) => {
     setTimeout(() => {
       resolve("Data from server 3");
     }, 1000);
   });
-
 fetchData1()
   .then((message) => {
     console.log(message);
@@ -61,7 +58,7 @@ const asyncFunctionResolve = async () => {
     }, 2000);
   });
 
-  const result = await promise;
+const result = await promise;
   console.log(result);
 };
 asyncFunctionResolve();
