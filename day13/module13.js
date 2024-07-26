@@ -1,5 +1,5 @@
-// const add = require("./day13");
-// console.log(add(2, 3));
+// const add1 = require("./day13");
+// console.log(add1(2, 3));
 
 // main.js
 // const person = require("./day13");
@@ -27,7 +27,6 @@ console.log(_.reverse(numbers)); // Outputs: [5, 4, 3, 2, 1]
 
 // main.js
 const axios = require("axios");
-
 axios
   .get("https://jsonplaceholder.typicode.com/todos/1")
   .then((response) => {
