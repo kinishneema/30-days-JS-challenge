@@ -11,7 +11,6 @@ class Person {
     return `Welcome ${this.name}`;
   }
 }
-
 const rahul = new Person("Rahul", 36);
 console.log(rahul.greet());
 
