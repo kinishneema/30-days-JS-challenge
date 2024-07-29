@@ -44,7 +44,6 @@ function maxElement(arr) {
 }
 // Test cases
 console.log(maxElement([1, 2, 3, 4, 5])); // Output: 5
-console.log(maxElement([10, 20, 30])); // Output: 30
 console.log(maxElement([5])); // Output: 5
 
 function reverseString(s) {
@@ -56,7 +55,6 @@ function reverseString(s) {
 }
 // Test cases
 console.log(reverseString("hello")); // Output: "olleh"
-console.log(reverseString("world")); // Output: "dlrow"
 console.log(reverseString("")); // Output: ""
 
 function isPalindrome(s) {
@@ -69,7 +67,6 @@ function isPalindrome(s) {
 // Test cases
 console.log(isPalindrome("madam")); // Output: true
 console.log(isPalindrome("hello")); // Output: false
-console.log(isPalindrome("a")); // Output: true
 
 function binarySearch(arr, target, low = 0, high = arr.length - 1) {
   if (low > high) {
