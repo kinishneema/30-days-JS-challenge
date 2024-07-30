@@ -12,8 +12,7 @@ class LinkedList {
   constructor() {
     this.head = null;
   }
-
-  // Add a node to the end
+// Add a node to the end
   add(value) {
     const newNode = new Node(value);
     if (!this.head) {
