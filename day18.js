@@ -1,3 +1,4 @@
+//task1
 function bubbleSort(arr) {
   let n = arr.length;
   for (let i = 0; i < n - 1; i++) {
@@ -12,6 +13,7 @@ function bubbleSort(arr) {
 const array1 = [64, 34, 25, 12, 22, 11, 90];
 console.log("Bubble Sorted Array:", bubbleSort(array1));
 
+//task2
 function selectionSort(arr) {
   let n = arr.length;
   for (let i = 0; i < n - 1; i++) {
@@ -28,6 +30,7 @@ function selectionSort(arr) {
 const array2 = [64, 25, 12, 22, 11];
 console.log("Selection Sorted Array:", selectionSort(array2));
 
+//task3
 function quicksort(arr) {
   if (arr.length <= 1) {
     return arr;
@@ -41,6 +44,7 @@ function quicksort(arr) {
 const array3 = [10, 7, 8, 9, 1, 5];
 console.log("Quicksort Sorted Array:", quicksort(array3));
 
+//task4
 function linear_search(arr, number) {
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] == number) {
@@ -58,6 +62,7 @@ if (result != -1) {
   console.log("element is not present");
 }
 
+//task5
 function binary_search(arr, number) {
   let start = 0;
   let end = arr.length - 1;
@@ -81,6 +86,7 @@ if (result != 1) {
   console.log(`element found at`);
 }
 
+//task6
 function countCharacterOccurrences(str) {
   const counts = {};
   for (const char of str) {
@@ -91,6 +97,7 @@ function countCharacterOccurrences(str) {
 const string1 = "hello world";
 console.log("Character Counts:", countCharacterOccurrences(string1));
 
+//task7
 function longestSubstringWithoutRepeating(str) {
   let maxLength = 0;
   let start = 0;
@@ -112,15 +119,16 @@ console.log(
   longestSubstringWithoutRepeating(string2)
 );
 
+//task8
 function rotateArray(arr, k) {
   k = k % arr.length;
   return arr.slice(-k).concat(arr.slice(0, -k));
 }
-
 const array6 = [1, 2, 3, 4, 5, 6, 7];
 const k = 3;
 console.log("Rotated Array:", rotateArray(array6, k));
 
+//task9
 function mergeSortedArrays(arr1, arr2) {
   let merged = [];
   let i = 0,
