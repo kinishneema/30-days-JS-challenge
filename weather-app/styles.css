@@ -16,10 +16,6 @@ body {
   text-align: center;
 }
 
-#weather-info {
-  margin-top: 20px;
-}
-
 #search-container {
   margin-bottom: 20px;
 }
@@ -43,10 +39,23 @@ body {
 #search-button:hover {
   background-color: #0056b3;
 }
+
+#weather-info,
 #forecast-info {
   margin-top: 20px;
 }
 
 .forecast-item {
   margin-bottom: 10px;
+}
+.forecast-item {
+  margin-bottom: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.forecast-item.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
