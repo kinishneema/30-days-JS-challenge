@@ -1,0 +1,21 @@
+/* Basic styling, you can customize this */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  display: inline-block;
+  width: 200px;
+}
+
+.product-image {
+  width: 100%;
+}
+
+.cart-item {
+  list-style: none;
+  margin: 10px 0;
+}
