@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  font-weight: 500;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #145dbf;
+}
+
+/* Login Form Styling */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1877f2;
+}
+
+.login-form {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Dashboard Styling */
+.dashboard header {
+  background-color: #1877f2;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.post-form-container {
+  width: 50%;
+  margin: 20px auto;
+}
+
+.post-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.post-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.post-form input[type="file"] {
+  margin-bottom: 10px;
+}
+
+.posts-container {
+  width: 50%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Post Styling */
+.post {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.post:hover {
+  transform: scale(1.02);
+}
+
+.post p {
+  margin: 10px 0;
+}
+
+.post img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.post button {
+  margin-right: 10px;
+}
+
+.own-post {
+  border-left: 5px solid #1877f2;
+}
+
+.comments-container {
+  margin-top: 10px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.comments-container p {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+  .post-form-container,
+  .posts-container {
+    width: 90%;
+  }
+
+  .login-form {
+    width: 90%;
+  }
+}
