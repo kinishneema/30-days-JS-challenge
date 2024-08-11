@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Social Media Dashboard</h1>
+    </header>
+    <main>
+      <aside id="sidebar">
+        <h2>User Info</h2>
+        <div id="profile-info"></div>
+        <button id="edit-profile">Edit Profile</button>
+      </aside>
+
+      <section id="post-feed">
+        <h2>Posts</h2>
+      </section>
+
+      <section id="new-post">
+        <h2>Create a New Post</h2>
+        <form id="post-form">
+          <label for="post-text">Post:</label>
+          <textarea id="post-text" required></textarea>
+          <button type="submit">Create Post</button>
+        </form>
+      </section>
+    </main>
+
+    <section id="auth-forms">
+      <h2>Login</h2>
+      <form id="login-form">
+        <label for="login-username">Username:</label>
+        <input type="text" id="login-username" required />
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" required />
+        <button type="submit">Login</button>
+      </form>
+      <h2>Register</h2>
+      <form id="register-form">
+        <label for="register-username">Username:</label>
+        <input type="text" id="register-username" required />
+        <label for="register-email">Email:</label>
+        <input type="email" id="register-email" required />
+        <label for="register-password">Password:</label>
+        <input type="password" id="register-password" required />
+        <button type="submit">Register</button>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
