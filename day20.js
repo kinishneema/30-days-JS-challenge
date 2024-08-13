@@ -123,4 +123,4 @@ function clearAllStorages() {
 }
 clearAllStorages();
 console.log(localStorage.length); // Output: 0
-console.log(sessionStorage.length); // Output: 0
+console.log(sessionStorage.length);
