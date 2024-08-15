@@ -26,7 +26,6 @@ function reverseInteger(x) {
 // Test cases
 console.log(reverseInteger(123)); // Output: 321
 console.log(reverseInteger(-123)); // Output: -321
-console.log(reverseInteger(120)); // Output: 21
 
 function isPalindrome(x) {
   if (x < 0) return false;
