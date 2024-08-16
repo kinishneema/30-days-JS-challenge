@@ -5,7 +5,8 @@ function outerFunction() {
     }
 }
 const inner = outerFunction();
-inner(); // Output: I am from the outer scope
+inner(); 
+// Output: I am from the outer scope
 
 
 function createCounter() {
