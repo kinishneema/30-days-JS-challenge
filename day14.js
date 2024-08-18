@@ -1,6 +1,4 @@
-// !Activity 1: Class Definition
-// Task 1: Define a class Person with properties name and age, and a method to return a greeting message.
-//  Create an instance of the class and log the greeting message.
+// Task 1
 console.group("Activity 1: Class Definition");
 class Person {
   constructor(name, age) {
