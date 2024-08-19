@@ -12,7 +12,7 @@ class Person {
 const rahul = new Person("Rahul", 36);
 console.log(rahul.greet());
 
-// Task 2: Add a method to the Person class that updates the age property and log the updated age.
+// Task 2
 Person.prototype.setAge = function (age) {
   this.age = age;
 };
@@ -20,9 +20,7 @@ rahul.setAge(29);
 console.log(`Age of Rahul is ${rahul.age}`);
 console.groupEnd();
 
-// !Activity 2: Class Inheritance
-// Task 3: Define a class Student that extends the Person class. Add a property studentId and a method to return the student ID.
-// Create an instance of the Student class and log the studdent ID.
+// Task 3:
 
 console.group("Activity 2: Class Inheritance");
 class Student extends Person {
@@ -38,16 +36,14 @@ const vijay = new Student("Vijay", 30, 2);
 console.log("Student ID of Vijay", vijay.getStudentId());
 console.log("Greet Vijay", vijay.greet());
 
-// Task 4: Override the greeting method in the Student class to include the Student ID in the message. Log the overridden greeting message.
+// Task 4:
 Student.prototype.greet = function () {
   return `Welcome ${this.name} Id:(${this.studentId})`;
 };
 console.log("Greet Vijay", vijay.greet());
 console.groupEnd();
 
-// !Activity 3: Static Methods and Properties
-// Task 5: Add a static method to the Person class that returns a generic greeting message.
-// Call this static method without creating an instance of the class and log the message.
+// Task 5:
 
 console.group("Activity 3: Static Method and Properties");
 class Person2 {
