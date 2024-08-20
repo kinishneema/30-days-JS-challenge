@@ -116,7 +116,7 @@ saveToBothStorages("sharedKey", "Shared Value");
 console.log(localStorage.getItem("sharedKey")); // Output: Shared Value
 console.log(sessionStorage.getItem("sharedKey")); // Output: Shared Value
 
-// Task 10: Write a function that clears all data from both localStorage and sessionStorage. Verify that both storages are empty.
+// Task 10:
 function clearAllStorages() {
   localStorage.clear();
   sessionStorage.clear();
