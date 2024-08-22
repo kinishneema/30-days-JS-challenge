@@ -114,7 +114,7 @@ function saveToBothStorages(key, value) {
 
 saveToBothStorages("sharedKey", "Shared Value");
 console.log(localStorage.getItem("sharedKey")); // Output: Shared Value
-console.log(sessionStorage.getItem("sharedKey")); // Output: Shared Value
+console.log(sessionStorage.getItem("sharedKey"));
 
 // Task 10:
 function clearAllStorages() {
