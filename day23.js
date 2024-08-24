@@ -58,7 +58,6 @@ function mergeTwoLists(l1, l2) {
   return dummy.next;
 }
 
-// Helper function to create linked lists from arrays
 function arrayToList(arr) {
   let dummy = new ListNode();
   let current = dummy;
